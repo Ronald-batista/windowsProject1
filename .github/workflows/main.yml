@@ -27,9 +27,9 @@ jobs:
       
       # Compile program
       - name: Compile the program
-        run: cd WindowsProject1 | cd Debug | .\WindowsProject1.exe
+        run: echo TODO# How to compile in terminal?
         
-        # How to compile in terminal?
+        
         
       # Execute program
       # - name: Execute the program
