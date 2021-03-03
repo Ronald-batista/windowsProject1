@@ -27,7 +27,7 @@ jobs:
       
       # Compile program
       - name: Compile the program
-        run: echo TODO# How to compile in terminal?
+        run: .\ronald.bat
         
         
         
