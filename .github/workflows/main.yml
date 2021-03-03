@@ -27,7 +27,9 @@ jobs:
       
       # Compile program
       - name: Compile the program
-        run: echo COMPILE1  # How to compile in terminal?
+        run: cd WindowsProject1 | cl WindowsProject1.cpp
+        
+        # How to compile in terminal?
         
       # Execute program
       # - name: Execute the program
