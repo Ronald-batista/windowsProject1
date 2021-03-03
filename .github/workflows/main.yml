@@ -34,7 +34,7 @@ jobs:
         
       # Execute program
       - name: Execute the program
-        run: .\WindowsProject1\Debug\WindownsProject.exe
+        run: .\WindownsProject.exe
         # run: echo EXECUTE # How to execute in terminal?
         
         
