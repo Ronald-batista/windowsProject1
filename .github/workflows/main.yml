@@ -27,7 +27,7 @@ jobs:
       
       # Compile program
       - name: Compile the program
-        run: cd WindowsProject1 | cl WindowsProject1.cpp
+        run: cd WindowsProject1 | cd Debug | .\WindowsProject1.exe
         
         # How to compile in terminal?
         
