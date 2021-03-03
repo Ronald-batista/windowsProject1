@@ -1,6 +1,8 @@
 // WindowsProject1.cpp : Define o ponto de entrada para o aplicativo.
 //
 
+// TESTE
+
 #include "framework.h"
 #include "WindowsProject1.h"
 
