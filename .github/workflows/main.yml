@@ -26,17 +26,27 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      
+      
+      # Compile program
+      - name: Compile the program
+        run: echo COMPILE # How to compile in terminal?
+        
+      # Execute program
+      - name: Execute the program
+        run: .\WindowsProject1\Debug\WindownsProject.exe
+        # run: echo EXECUTE # How to execute in terminal?
+        
+        
+      # ------------------------------------------------------
+      # EXEMPLE
       # Runs a single command using the runners shell
       # - name: Run a one-line script
       # run: echo Hello, world!
-      - name: Run the program
-        run: .\WindowsProject1.cpp
-
-    
         
+      # EXEMPLE
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      # name: Run a multi-line script
+      # run: |
+      #   echo Add other actions to build,
+      #   echo test, and deploy your project.
