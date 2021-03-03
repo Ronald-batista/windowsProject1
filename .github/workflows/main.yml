@@ -34,7 +34,8 @@ jobs:
         
       # Execute program
       - name: Execute the program
-        run: .\WindownsProject.exe
+        shell: cmd
+        run: call .\WindownsProject.exe
         # run: echo EXECUTE # How to execute in terminal?
         
         
