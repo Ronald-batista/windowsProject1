@@ -30,12 +30,12 @@ jobs:
       
       # Compile program
       - name: Compile the program
-        run: echo COMPILE # How to compile in terminal?
+        run: echo COMPILE1 >> ronald.txt # How to compile in terminal?
         
       # Execute program
       - name: Execute the program
         shell: cmd
-        run: call .\WindownsProject.exe
+        run: code .
         # run: echo EXECUTE # How to execute in terminal?
         
         
