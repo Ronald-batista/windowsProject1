@@ -31,7 +31,7 @@ jobs:
       
       # Compile program
       - name: Compile the program
-        run: msbuild.exe
+        run: msbuild.exe .\WindowsProject1\
         
         
         
