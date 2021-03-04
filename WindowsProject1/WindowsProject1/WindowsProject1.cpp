@@ -9,7 +9,7 @@
 
 // Variáveis Globais:
 HINSTANCE hInst;                                // instância atual
-WCHAR szTitle[MAX_LOADSTRING];                  // O texto da barra de título
+WCHAR szTitle[MAX_LOADSTRIN];                  // O texto da barra de título
 WCHAR szWindowClass[MAX_LOADSTRING];            // o nome da classe da janela principal
 
 // Declarações de encaminhamento de funções incluídas nesse módulo de código:
