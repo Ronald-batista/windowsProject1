@@ -25,9 +25,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      # Add MSBuild to the path
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.2
+      
       # Compile program
       - name: Compile the program
-        run: echo TODO# How to compile in terminal?
+        run: msbuild.exe .\WindowsProject1\
         
         
         
