@@ -29,11 +29,7 @@ jobs:
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.0.2
       
-      # Restore the application - TESTANDO SE É NECESSARIO
-      - name:  Restore the Wpf application to populate the obj folder
-        run: msbuild .\WindowsProject1\ $env:Solution_Path /t:Restore /p:Configuration=$env:Configuration /p:RuntimeIdentifier=$env:RuntimeIdentifier
-      
-      
+         
       # Compile program
       - name: Compile the program
         run: msbuild.exe .\WindowsProject1\
