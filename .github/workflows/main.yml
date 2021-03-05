@@ -33,13 +33,14 @@ jobs:
       # Compile program
       - name: Compile the program
         run: msbuild.exe .\WindowsProject1\
-        
-        
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+          BuildMode: StoreUpload
+          GenerateAppInstallerFile: true
+          
+     # Archive the package
+      - name: Create archive
+        run: Compress-Archive -Path $env:windowsProject1\* -DestinationPath $env:windowsProject1\
+
           
           
 
