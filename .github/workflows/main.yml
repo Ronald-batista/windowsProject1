@@ -39,8 +39,7 @@ jobs:
           
      # Archive the package
       - name: Create archive
-        run: Compress-Archive -Path $env:windowsProject1\* -DestinationPath $env:windowsProject1\
-
+        run: Compress-Archive -Path $env:\ -DestinationPath $env:\
           
           
 
