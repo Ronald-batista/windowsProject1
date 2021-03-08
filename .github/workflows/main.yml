@@ -39,14 +39,14 @@ jobs:
         env:
           BuildMode: StoreUpload # nao sei se acrescentou algo realmente
           GenerateAppInstallerFile: true # nao sei se acrescentou algo realmente
-          #Configuration: Release # Se está desativada, o programa compila em modo debug
+          #Configuration: Release # Default is Debug Mode
           
           
-      # Upload the build artifact: https://github.com/marketplace/actions/upload-artifact
+      # Upload the build artifacts: https://github.com/marketplace/actions/upload-artifact
       - name: Upload build artifacts
         uses: actions/upload-artifact@v1
         with:
           name: 'Build Debug mode'
-          path:  'D:\a\windowsProject1\WindowsProject1\'
+          path:  'D:\a\windowsProject1\WindowsProject1\WindowsProject1'
           
 
