@@ -37,9 +37,6 @@ jobs:
           BuildMode: StoreUpload
           GenerateAppInstallerFile: true
           
-     # Archive the package
-      - name: Create archive
-        run: Compress-Archive -Path $env:\ -DestinationPath $env:\
           
           
 
