@@ -22,8 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
       
       # Add MSBuild to the path
       - name: Add msbuild to PATH
@@ -32,18 +34,20 @@ jobs:
          
       # Compile program
       - name: Compile the program
+        id: create_build
         run: msbuild.exe .\WindowsProject1\
         env:
           BuildMode: StoreUpload # nao sei se acrescentou algo realmente
           GenerateAppInstallerFile: true # nao sei se acrescentou algo realmente
-          #Configuration: Release
+          #Configuration: Release # Se está desativada, o programa compila em modo debug
           
-      # Upload the MSIX package: https://github.com/marketplace/actions/upload-artifact
+          
+      # Upload the build artifact: https://github.com/marketplace/actions/upload-artifact
       - name: Upload build artifacts
         uses: actions/upload-artifact@v1
         with:
-          name: Build
+          name: Build Debug
           path: WindowsProject1\
-          
+          upload_url: ${{ steps.create_build.outputs.upload_url }}
           
 
