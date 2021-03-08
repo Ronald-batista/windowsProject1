@@ -36,13 +36,13 @@ jobs:
         env:
           BuildMode: StoreUpload # nao sei se acrescentou algo realmente
           GenerateAppInstallerFile: true # nao sei se acrescentou algo realmente
-          Configuration: Release
+          #Configuration: Release
           
       # Upload the MSIX package: https://github.com/marketplace/actions/upload-artifact
       - name: Upload build artifacts
         uses: actions/upload-artifact@v1
         with:
-          name: MSIX Package
+          name: Build
           path: WindowsProject1\
           
           
