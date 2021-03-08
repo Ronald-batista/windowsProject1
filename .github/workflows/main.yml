@@ -46,8 +46,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v1
         with:
-          name: Build Debug
-          path: WindowsProject1\
-          upload_url: ${{ steps.create_build.outputs.upload_url }}
+          name: 'Build Debug mode'
+          path: '~/'
           
 
