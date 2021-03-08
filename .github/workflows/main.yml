@@ -47,6 +47,6 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: 'Build Debug mode'
-          path: '~/'
+          path: '/builds'
           
 
