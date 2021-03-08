@@ -34,9 +34,16 @@ jobs:
       - name: Compile the program
         run: msbuild.exe .\WindowsProject1\
         env:
-          BuildMode: StoreUpload
-          GenerateAppInstallerFile: true
+          BuildMode: StoreUpload # nao sei se acrescentou algo realmente
+          GenerateAppInstallerFile: true # nao sei se acrescentou algo realmente
+          Configuration: Release
           
+      # Upload the MSIX package: https://github.com/marketplace/actions/upload-artifact
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: MSIX Package
+          path: WindowsProject1\
           
           
 
