@@ -37,8 +37,8 @@ jobs:
         id: create_build
         run: msbuild.exe .\WindowsProject1\
         env:
-          BuildMode: StoreUpload # nao sei se acrescentou algo realmente
-          GenerateAppInstallerFile: true # nao sei se acrescentou algo realmente
+          BuildMode: StoreUpload 
+          GenerateAppInstallerFile: true 
           #Configuration: Release # Default is Debug Mode
           
           
