@@ -4,9 +4,8 @@ name: CI
 
 # Controls when the action will run. 
 on:  
-  check_run:
-  #repository_dispatch:
-   #    types: [ build, release, watch ]
+  repository_dispatch:
+    types: [my-event]
 
   # Triggers the workflow on push event but only for the main branch
   
