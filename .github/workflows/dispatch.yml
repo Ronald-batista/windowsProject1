@@ -25,7 +25,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          token: b1d0a531a4794401fb5dd1c0bbfc0ff0694ac933
           repository: Ronald-batista/batalha-naval
           event-type: my-event
           client-payload: '{"submodule": "${{ github.repository }}"}'
